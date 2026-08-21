@@ -34,10 +34,7 @@
 </div>
 
 <div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=CupoMeridio&show_icons=true&hide_border=true&bg_color=050505&title_color=0AFFB0&icon_color=0AFFB0&text_color=ffffff&count_private=true" height="165"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=CupoMeridio&layout=compact&hide_border=true&bg_color=050505&title_color=0AFFB0&text_color=ffffff" height="165"/>
-
+<img src="assets/diagnostics.svg" width="650"/>
 </div>
 
 <br>

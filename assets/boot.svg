@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="260" viewBox="0 0 650 260">
+  <style>
+    .bg { fill: #050505; }
+    .text {
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 14px;
+      fill: #ffffff;
+      opacity: 0;
+    }
+    .accent { fill: #0AFFB0; }
+    
+    .l1 { animation: a1 10s infinite; }
+    .l2 { animation: a2 10s infinite; }
+    .l3 { animation: a3 10s infinite; }
+    .l4 { animation: a4 10s infinite; }
+    .l5 { animation: a5 10s infinite; }
+    .l6 { animation: a6 10s infinite; }
+    .l7 { animation: a7 10s infinite; }
+    .l8 { animation: a8 10s infinite; }
+
+    @keyframes a1 { 0%, 4% { opacity: 0; } 5%, 95% { opacity: 1; } 96%, 100% { opacity: 0; } }
+    @keyframes a2 { 0%, 14% { opacity: 0; } 15%, 95% { opacity: 1; } 96%, 100% { opacity: 0; } }
+    @keyframes a3 { 0%, 17% { opacity: 0; } 18%, 95% { opacity: 1; } 96%, 100% { opacity: 0; } }
+    @keyframes a4 { 0%, 20% { opacity: 0; } 21%, 95% { opacity: 1; } 96%, 100% { opacity: 0; } }
+    @keyframes a5 { 0%, 23% { opacity: 0; } 24%, 95% { opacity: 1; } 96%, 100% { opacity: 0; } }
+    @keyframes a6 { 0%, 26% { opacity: 0; } 27%, 95% { opacity: 1; } 96%, 100% { opacity: 0; } }
+    @keyframes a7 { 0%, 29% { opacity: 0; } 30%, 95% { opacity: 1; } 96%, 100% { opacity: 0; } }
+    @keyframes a8 { 0%, 39% { opacity: 0; } 40%, 95% { opacity: 1; } 96%, 100% { opacity: 0; } }
+
+    /* Terminal window controls */
+    .btn { r: 6px; }
+    .btn-red { fill: #ff5f56; }
+    .btn-yel { fill: #ffbd2e; }
+    .btn-grn { fill: #27c93f; }
+  </style>
+
+  <!-- Faint moving grid pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0AFFB0" stroke-width="0.5" stroke-opacity="0.15" />
+    </pattern>
+  </defs>
+
+  <path class="bg" d="M8 0 H642 A8 8 0 0 1 650 8 V260 H0 V8 A8 8 0 0 1 8 0 Z" />
+  
+  <rect width="100%" height="100%" fill="url(#grid)">
+    <animateTransform attributeName="transform" type="translate" values="0,0; -40,-40" dur="8s" repeatCount="indefinite" />
+  </rect>
+  
+  <!-- Window buttons -->
+  <circle class="btn btn-red" cx="20" cy="20" />
+  <circle class="btn btn-yel" cx="40" cy="20" />
+  <circle class="btn btn-grn" cx="60" cy="20" />
+
+  <!-- Text -->
+  <text class="text l1" x="20" y="60"><tspan class="accent">[SYSTEM]</tspan> booting profile.exe ...</text>
+  <text class="text l2" x="20" y="90" xml:space="preserve">  <tspan class="accent">[ OK ]</tspan> loading kernel modules</text>
+  <text class="text l3" x="20" y="110" xml:space="preserve">  <tspan class="accent">[ OK ]</tspan> mounting /dev/university (UNISA)</text>
+  <text class="text l4" x="20" y="130" xml:space="preserve">  <tspan class="accent">[ OK ]</tspan> initializing jvm runtime</text>
+  <text class="text l5" x="20" y="150" xml:space="preserve">  <tspan class="accent">[ OK ]</tspan> initializing python interpreter</text>
+  <text class="text l6" x="20" y="170" xml:space="preserve">  <tspan class="accent">[ OK ]</tspan> loading neural network weights</text>
+  <text class="text l7" x="20" y="190" xml:space="preserve">  <tspan class="accent">[ OK ]</tspan> establishing uplink</text>
+  <text class="text l8" x="20" y="230"><tspan class="accent">[SYSTEM]</tspan> boot complete — 6/6 modules loaded — 0 errors</text>
+
+</svg>

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="230" viewBox="0 0 650 230">
+  <style>
+    .bg { fill: #050505; rx: 6px; }
+    .text {
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 14px;
+      fill: #ffffff;
+      opacity: 0;
+    }
+    .prompt { fill: #0AFFB0; font-weight: bold; }
+    .accent { fill: #0AFFB0; }
+    .string { fill: #ffbd2e; }
+    .cursor {
+      fill: #ffffff;
+      animation: blink 1s step-end infinite;
+    }
+    
+    .l1 { animation: type 0.5s forwards; }
+    .l2 { animation: type 0.5s forwards; animation-delay: 0.2s; }
+    .l3 { animation: fade 0.8s forwards; animation-delay: 1.0s; }
+    .l4 { animation: fade 0.8s forwards; animation-delay: 1.2s; }
+    .l5 { animation: fade 0.8s forwards; animation-delay: 1.4s; }
+    .l6 { animation: fade 0.8s forwards; animation-delay: 1.6s; }
+    .l7 { animation: fade 0.8s forwards; animation-delay: 1.8s; }
+    .l8 { animation: fade 0.8s forwards; animation-delay: 2.0s; }
+    .l9 { animation: fade 0.8s forwards; animation-delay: 2.2s; }
+
+    .quote {
+      opacity: 0;
+      animation: cycle 20s infinite;
+    }
+    .q1 { animation-delay: 2.2s; }
+    .q2 { animation-delay: 7.2s; }
+    .q3 { animation-delay: 12.2s; }
+    .q4 { animation-delay: 17.2s; }
+
+    @keyframes type {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes fade {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes cycle {
+      0% { opacity: 0; }
+      5%, 20% { opacity: 1; }
+      25%, 100% { opacity: 0; }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
+
+  <!-- Faint moving grid pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0AFFB0" stroke-width="0.5" stroke-opacity="0.15" />
+    </pattern>
+  </defs>
+
+  <path class="bg" d="M0 0 H650 V222 A8 8 0 0 1 642 230 H8 A8 8 0 0 1 0 222 Z" />
+  
+  <rect width="100%" height="100%" fill="url(#grid)">
+    <animateTransform attributeName="transform" type="translate" values="0,0; -40,-40" dur="8s" repeatCount="indefinite" />
+  </rect>
+
+  <!-- Command Line -->
+  <text class="text l1" x="20" y="30"><tspan class="prompt">┌─[vittorio@unisa]─[/home/vittorio]</tspan></text>
+  <text class="text l2" x="20" y="50"><tspan class="prompt">└──╼ $</tspan> cat profile.txt<tspan class="cursor">_</tspan></text>
+
+  <!-- Output -->
+  <text class="text l3" x="20" y="80" xml:space="preserve"> <tspan class="accent">NAME</tspan>     :: Vittorio</text>
+  <text class="text l4" x="20" y="100" xml:space="preserve"> <tspan class="accent">STATUS</tspan>   :: Computer Engineering student @ UNISA</text>
+  <text class="text l5" x="20" y="120" xml:space="preserve"> <tspan class="accent">FOCUS</tspan>    :: Software Architecture  ×  Machine Learning  ×  Security</text>
+  <text class="text l6" x="20" y="140" xml:space="preserve"> <tspan class="accent">STACK</tspan>    :: Java / JavaFX   ·   Python / PyTorch   ·   C (embedded)   ·   JS</text>
+  <text class="text l7" x="20" y="160" xml:space="preserve"> <tspan class="accent">ORIGIN</tspan>   :: most projects start as exam requirements — some outgrow that</text>
+  <text class="text l8" x="20" y="180" xml:space="preserve"> <tspan class="accent">UPTIME</tspan>   :: still compiling</text>
+  <text class="text l9" x="20" y="200" xml:space="preserve"> <tspan class="accent">LOG</tspan>      :: </text>
+  
+  <text class="text quote q1" x="20" y="200" xml:space="preserve">             <tspan class="string">"coding without EDM is just typing in silence"</tspan></text>
+  <text class="text quote q2" x="20" y="200" xml:space="preserve">             <tspan class="string">"why be static when you can be dynamic?"</tspan></text>
+  <text class="text quote q3" x="20" y="200" xml:space="preserve">             <tspan class="string">"going Plus Ultra on every single commit"</tspan></text>
+  <text class="text quote q4" x="20" y="200" xml:space="preserve">             <tspan class="string">"Tomorrow comes."</tspan></text>
+</svg>

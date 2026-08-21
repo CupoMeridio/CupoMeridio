@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="150" viewBox="0 0 650 150">
+  <style>
+    .bg { fill: #050505; }
+    .text {
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 14px;
+      fill: #ffffff;
+    }
+    .accent { fill: #0AFFB0; }
+    .live { fill: #ff5f56; font-weight: bold; animation: blink 1s infinite; }
+    .pulse { animation: pulse 2s infinite alternate; }
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    @keyframes pulse {
+      0% { opacity: 0.6; }
+      100% { opacity: 1; }
+    }
+  </style>
+  
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0AFFB0" stroke-width="0.5" stroke-opacity="0.15" />
+    </pattern>
+  </defs>
+
+  <rect class="bg" width="100%" height="100%" />
+  
+  <rect width="100%" height="100%" fill="url(#grid)">
+    <animateTransform attributeName="transform" type="translate" values="0,0; -40,-40" dur="8s" repeatCount="indefinite" />
+  </rect>
+  
+  <text class="text" x="20" y="30">[SYSTEM] <tspan class="live">LIVE</tspan> telemetry</text>
+  <text class="text" x="20" y="65">  uptime        :: <tspan class="accent pulse">n/a</tspan></text>
+  <text class="text" x="20" y="85">  last_push     :: <tspan class="accent pulse">n/a</tspan></text>
+  <text class="text" x="20" y="105">  last_message  :: <tspan class="accent pulse">n/a</tspan></text>
+  <text class="text" x="20" y="125">  synced_at     :: <tspan class="accent pulse">2026-08-21 23:49 UTC</tspan></text>
+</svg>

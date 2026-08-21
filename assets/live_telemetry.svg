@@ -34,6 +34,6 @@
   <text class="text" x="20" y="30">[SYSTEM] <tspan class="live">LIVE</tspan> telemetry</text>
   <text class="text" x="20" y="65">  uptime        :: <tspan class="accent pulse">n/a</tspan></text>
   <text class="text" x="20" y="85">  last_push     :: <tspan class="accent pulse">n/a</tspan></text>
-  <text class="text" x="20" y="105">  last_message  :: <tspan class="accent pulse">n/a</tspan></text>
-  <text class="text" x="20" y="125">  synced_at     :: <tspan class="accent pulse">2026-08-21 23:54 UTC</tspan></text>
+  <text class="text" x="20" y="105">  last_message  :: <tspan class="accent pulse">no recent public activity</tspan></text>
+  <text class="text" x="20" y="125">  synced_at     :: <tspan class="accent pulse">2026-08-21 23:57 UTC</tspan></text>
 </svg>

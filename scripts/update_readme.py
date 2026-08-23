@@ -52,19 +52,19 @@ def generate_telemetry_svg():
     try:
         uptime = f"{get_uptime_days()} days"
     except (urllib.error.URLError, KeyError, ValueError):
-        uptime = "n/a"
+        uptime = "[UNAVAILABLE]"
 
     try:
         repo, message = get_last_push()
     except (urllib.error.URLError, KeyError, ValueError):
-        repo, message = "n/a", "n/a"
+        repo, message = "[UNAVAILABLE]", "[UNAVAILABLE]"
 
     synced_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
     # Gestione escape per XML
     message = message.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
-    svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" width="650" height="150" viewBox="0 0 650 150">
+    svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="150" viewBox="0 0 650 150">
   <style>
     .bg {{ fill: #050505; }}
     .text {{
@@ -161,7 +161,7 @@ def generate_modules_svg():
     }
     fallback_colors = ["#ff79c6", "#8be9fd", "#50fa7b", "#f1fa8c", "#bd93f9", "#ffb86c", "#1de9b6", "#d946ef"]
 
-    svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{svg_width}" height="{svg_height}" viewBox="0 0 {svg_width} {svg_height}">
+    svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="{svg_height}" viewBox="0 0 {svg_width} {svg_height}">
   <style>
     .bg {{ fill: #050505; rx: 6px; }}
     .text {{
@@ -253,27 +253,30 @@ def get_user_diagnostics():
         total_stars = sum(repo.get("stargazers_count", 0) for repo in repos if not repo.get("fork"))
         
         return {
+            "error": False,
             "repos": user_data.get("public_repos", 0),
             "stars": total_stars,
             "followers": user_data.get("followers", 0),
             "following": user_data.get("following", 0)
         }
     except Exception:
-        # Fallback to mock data if API limits are hit during tests
+        # Fallback to visual placeholder instead of mock data
         return {
-            "repos": 14,
-            "stars": 23,
-            "followers": 5,
-            "following": 4
+            "error": True,
+            "repos": "ERR",
+            "stars": "ERR",
+            "followers": "ERR",
+            "following": "ERR"
         }
 
 def generate_diagnostics_svg():
     stats = get_user_diagnostics()
+    val_class = "err" if stats.get("error") else "val"
 
     svg_width = 650
     svg_height = 140
     
-    svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{svg_width}" height="{svg_height}" viewBox="0 0 {svg_width} {svg_height}">
+    svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="{svg_height}" viewBox="0 0 {svg_width} {svg_height}">
   <style>
     .bg {{ fill: #050505; }}
     .text {{
@@ -286,6 +289,7 @@ def generate_diagnostics_svg():
     .accent {{ fill: #0AFFB0; }}
     .hl {{ fill: #ff5f56; font-weight: bold; }}
     .val {{ fill: #f1fa8c; }}
+    .err {{ fill: #ff5555; animation: glitch 1.5s infinite; }}
     
     .l1 {{ animation-delay: 0.1s; }}
     .l2 {{ animation-delay: 0.3s; }}
@@ -295,6 +299,10 @@ def generate_diagnostics_svg():
     @keyframes type {{
       0% {{ opacity: 0; }}
       100% {{ opacity: 1; }}
+    }}
+    @keyframes glitch {{
+      0%, 100% {{ opacity: 1; }}
+      50% {{ opacity: 0.3; }}
     }}
   </style>
 
@@ -308,9 +316,9 @@ def generate_diagnostics_svg():
   <rect width="100%" height="100%" fill="url(#grid)" />
 
   <text class="text l1" x="20" y="30" xml:space="preserve"><tspan class="accent">[+]</tspan> RUNNING SYSTEM DIAGNOSTICS...</text>
-  <text class="text l2" x="20" y="60" xml:space="preserve">    DATA.REPOSITORIES <tspan class="hl">></tspan>  <tspan class="val">{stats['repos']}</tspan> DEPLOYED</text>
-  <text class="text l3" x="20" y="85" xml:space="preserve">    DATA.STARGAZERS   <tspan class="hl">></tspan>  <tspan class="val">{stats['stars']}</tspan> DETECTED</text>
-  <text class="text l4" x="20" y="110" xml:space="preserve">    DATA.NETWORK      <tspan class="hl">></tspan>  <tspan class="val">{stats['followers']}</tspan> FOLLOWERS, <tspan class="val">{stats['following']}</tspan> FOLLOWING</text>
+  <text class="text l2" x="20" y="60" xml:space="preserve">    DATA.REPOSITORIES <tspan class="hl">></tspan>  <tspan class="{val_class}">{stats['repos']}</tspan> DEPLOYED</text>
+  <text class="text l3" x="20" y="85" xml:space="preserve">    DATA.STARGAZERS   <tspan class="hl">></tspan>  <tspan class="{val_class}">{stats['stars']}</tspan> DETECTED</text>
+  <text class="text l4" x="20" y="110" xml:space="preserve">    DATA.NETWORK      <tspan class="hl">></tspan>  <tspan class="{val_class}">{stats['followers']}</tspan> FOLLOWERS, <tspan class="{val_class}">{stats['following']}</tspan> FOLLOWING</text>
 </svg>'''
 
     os.makedirs(os.path.dirname(SVG_MODULES_PATH), exist_ok=True)

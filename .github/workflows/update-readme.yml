@@ -33,6 +33,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md assets/dynamic_modules.svg assets/live_telemetry.svg
+          git add README.md assets/dynamic_modules.svg assets/live_telemetry.svg assets/diagnostics.svg
           git diff --cached --quiet || git commit -m "chore: sync dynamic SVGs"
           git push

@@ -38,7 +38,7 @@
   <rect width="100%" height="100%" fill="url(#grid)" />
 
   <text class="text l1" x="20" y="30" xml:space="preserve"><tspan class="accent">[+]</tspan> RUNNING SYSTEM DIAGNOSTICS...</text>
-  <text class="text l2" x="20" y="60" xml:space="preserve">    DATA.REPOSITORIES <tspan class="hl">></tspan>  <tspan class="err">ERR</tspan> DEPLOYED</text>
-  <text class="text l3" x="20" y="85" xml:space="preserve">    DATA.STARGAZERS   <tspan class="hl">></tspan>  <tspan class="err">ERR</tspan> DETECTED</text>
-  <text class="text l4" x="20" y="110" xml:space="preserve">    DATA.NETWORK      <tspan class="hl">></tspan>  <tspan class="err">ERR</tspan> FOLLOWERS, <tspan class="err">ERR</tspan> FOLLOWING</text>
+  <text class="text l2" x="20" y="60" xml:space="preserve">    DATA.REPOSITORIES <tspan class="hl">></tspan>  <tspan class="val">14</tspan> DEPLOYED</text>
+  <text class="text l3" x="20" y="85" xml:space="preserve">    DATA.STARGAZERS   <tspan class="hl">></tspan>  <tspan class="val">6</tspan> DETECTED</text>
+  <text class="text l4" x="20" y="110" xml:space="preserve">    DATA.NETWORK      <tspan class="hl">></tspan>  <tspan class="val">10</tspan> FOLLOWERS, <tspan class="val">6</tspan> FOLLOWING</text>
 </svg>

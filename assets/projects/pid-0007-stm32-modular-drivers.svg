@@ -45,11 +45,11 @@
   </rect>
 
   <!-- Header processo -->
-  <text class="text" x="20" y="30" xml:space="preserve">PID 0007 ── <tspan class="accent">stm32-hal-modular-drivers</tspan> ────────────────── <tspan class="accent status">[RUNNING]</tspan></text>
+  <text class="text" x="20" y="30" xml:space="preserve">PID 0007 ── <tspan class="accent">stm32-modular-drivers</tspan> ────────────────────── <tspan class="accent status">[RUNNING]</tspan></text>
 
   <!-- Contenuto descrittivo e link -->
   <text class="text" x="20" y="55" xml:space="preserve"><tspan class="tree">   │</tspan>  <tspan class="tags">[exam · embedded]</tspan>  OOP-style C drivers for STM32 (LED,</text>
   <text class="text" x="20" y="75" xml:space="preserve"><tspan class="tree">   │</tspan>  button, FIFO queue, servo, RTC). Fully non-blocking, no</text>
   <text class="text" x="20" y="95" xml:space="preserve"><tspan class="tree">   │</tspan>  HAL_Delay, null-pointer guarded throughout.</text>
-  <text class="text" x="20" y="119" xml:space="preserve"><tspan class="tree">   └─→</tspan> <tspan class="link">github.com/CupoMeridio/stm32-hal-modular-drivers</tspan> <tspan class="accent">↗</tspan></text>
+  <text class="text" x="20" y="119" xml:space="preserve"><tspan class="tree">   └─→</tspan> <tspan class="link">github.com/CupoMeridio/stm32-modular-drivers</tspan> <tspan class="accent">↗</tspan></text>
 </svg>

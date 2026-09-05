@@ -45,7 +45,7 @@
   </rect>
 
   <!-- Header processo -->
-  <text class="text" x="20" y="30" xml:space="preserve">PID 0002 ── <tspan class="accent">waste-type-classifier</tspan> ────────────────────── <tspan class="accent status">[RUNNING]</tspan></text>
+  <text class="text" x="20" y="30" xml:space="preserve">PID 0002 ── <tspan class="accent">image-based-waste-classification</tspan> ─────────── <tspan class="accent status">[RUNNING]</tspan></text>
 
   <!-- Contenuto descrittivo e link -->
   <text class="text" x="20" y="55" xml:space="preserve"><tspan class="tree">   │</tspan>  <tspan class="tags">[exam · ml]</tspan>  8-class waste image classification, PyTorch.</text>
@@ -53,5 +53,5 @@
   <text class="text" x="20" y="95" xml:space="preserve"><tspan class="tree">   │</tspan>  temperature-scaled reject option for open-set recognition,</text>
   <text class="text" x="20" y="115" xml:space="preserve"><tspan class="tree">   │</tspan>  Grad-CAM interpretability. Full experiment suite, not just</text>
   <text class="text" x="20" y="135" xml:space="preserve"><tspan class="tree">   │</tspan>  a single trained model.</text>
-  <text class="text" x="20" y="159" xml:space="preserve"><tspan class="tree">   └─→</tspan> <tspan class="link">github.com/CupoMeridio/waste-type-classifier</tspan> <tspan class="accent">↗</tspan></text>
+  <text class="text" x="20" y="159" xml:space="preserve"><tspan class="tree">   └─→</tspan> <tspan class="link">github.com/CupoMeridio/Image-Based-Waste-Classification</tspan> <tspan class="accent">↗</tspan></text>
 </svg>

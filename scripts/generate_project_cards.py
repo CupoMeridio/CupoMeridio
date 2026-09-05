@@ -1,6 +1,6 @@
 """
 Generatore di card SVG individuali per ciascun progetto in assets/projects/
-Mantiene lo stile terminale/cyberpunk di processes.svg, ma rende ogni card autonoma e cliccabile.
+Mantiene lo stile terminale/cyberpunk del layout di sistema, rendendo ogni card autonoma e cliccabile.
 """
 
 import html
@@ -21,13 +21,13 @@ PROJECTS = [
             "for fun post-exam. Ports & Adapters, Factory, Command/Undo,",
             "125 unit tests, custom Persona-style UI theming engine."
         ],
-        "repo_display": "github.com/CupoMeridio/Java-Music-Playlist-Manager",
-        "repo_url": "https://github.com/CupoMeridio/Java-Music-Playlist-Manager",
+        "repo_display": "github.com/CupoMeridio/Java_Music_Playlist_Manager",
+        "repo_url": "https://github.com/CupoMeridio/Java_Music_Playlist_Manager",
         "filename": "pid-0001-java-music-playlist-manager.svg"
     },
     {
         "pid": "PID 0002",
-        "name": "waste-type-classifier",
+        "name": "image-based-waste-classification",
         "tag": "[exam · ml]",
         "lines": [
             "8-class waste image classification, PyTorch.",
@@ -36,9 +36,9 @@ PROJECTS = [
             "Grad-CAM interpretability. Full experiment suite, not just",
             "a single trained model."
         ],
-        "repo_display": "github.com/CupoMeridio/waste-type-classifier",
-        "repo_url": "https://github.com/CupoMeridio/waste-type-classifier",
-        "filename": "pid-0002-waste-type-classifier.svg"
+        "repo_display": "github.com/CupoMeridio/Image-Based-Waste-Classification",
+        "repo_url": "https://github.com/CupoMeridio/Image-Based-Waste-Classification",
+        "filename": "pid-0002-image-based-waste-classification.svg"
     },
     {
         "pid": "PID 0003",
@@ -95,16 +95,16 @@ PROJECTS = [
     },
     {
         "pid": "PID 0007",
-        "name": "stm32-hal-modular-drivers",
+        "name": "stm32-modular-drivers",
         "tag": "[exam · embedded]",
         "lines": [
             "OOP-style C drivers for STM32 (LED,",
             "button, FIFO queue, servo, RTC). Fully non-blocking, no",
             "HAL_Delay, null-pointer guarded throughout."
         ],
-        "repo_display": "github.com/CupoMeridio/stm32-hal-modular-drivers",
-        "repo_url": "https://github.com/CupoMeridio/stm32-hal-modular-drivers",
-        "filename": "pid-0007-stm32-hal-modular-drivers.svg"
+        "repo_display": "github.com/CupoMeridio/stm32-modular-drivers",
+        "repo_url": "https://github.com/CupoMeridio/stm32-modular-drivers",
+        "filename": "pid-0007-stm32-modular-drivers.svg"
     },
     {
         "pid": "PID 0008",

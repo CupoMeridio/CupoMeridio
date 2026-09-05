@@ -22,17 +22,17 @@
     }
     @keyframes load-0 {
       0% { width: 0; }
-      100% { width: 132px; }
+      100% { width: 131px; }
     }
     @keyframes fluctuate-0 {
-      0%, 100% { width: 132px; }
-      33% { width: 128px; }
-      66% { width: 135px; }
+      0%, 100% { width: 131px; }
+      33% { width: 127px; }
+      66% { width: 134px; }
     }
 
-    .lang-1 { fill: #d946ef; }
+    .lang-1 { fill: #ffb86c; }
     .bar-1 {
-      fill: #d946ef;
+      fill: #ffb86c;
       rx: 2px;
       animation: load-1 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards, fluctuate-1 4.2s ease-in-out 1.5s infinite;
     }
@@ -46,9 +46,9 @@
       66% { width: 61px; }
     }
 
-    .lang-2 { fill: #ffb86c; }
+    .lang-2 { fill: #d946ef; }
     .bar-2 {
-      fill: #ffb86c;
+      fill: #d946ef;
       rx: 2px;
       animation: load-2 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards, fluctuate-2 4.9s ease-in-out 1.5s infinite;
     }
@@ -86,12 +86,12 @@
     }
     @keyframes load-4 {
       0% { width: 0; }
-      100% { width: 26px; }
+      100% { width: 27px; }
     }
     @keyframes fluctuate-4 {
-      0%, 100% { width: 26px; }
-      33% { width: 22px; }
-      66% { width: 29px; }
+      0%, 100% { width: 27px; }
+      33% { width: 23px; }
+      66% { width: 30px; }
     }
 
     .lang-5 { fill: #50fa7b; }
@@ -129,16 +129,16 @@
   <rect class="bar-bg" x="170" y="14" width="360" height="10" />
   <rect class="bar-0" x="170" y="14" width="0" height="10" />
   <text class="text" x="535" y="24">]</text>
-  <text class="text pct lang-0" x="560" y="24">37%</text>
+  <text class="text pct lang-0" x="560" y="24">36%</text>
 
-  <text class="text lang-1" x="20" y="59">Jupyter Notebook</text>
+  <text class="text lang-1" x="20" y="59">Java</text>
   <text class="text" x="160" y="59">[</text>
   <rect class="bar-bg" x="170" y="49" width="360" height="10" />
   <rect class="bar-1" x="170" y="49" width="0" height="10" />
   <text class="text" x="535" y="59">]</text>
   <text class="text pct lang-1" x="560" y="59">16%</text>
 
-  <text class="text lang-2" x="20" y="94">Java</text>
+  <text class="text lang-2" x="20" y="94">Jupyter Notebook</text>
   <text class="text" x="160" y="94">[</text>
   <rect class="bar-bg" x="170" y="84" width="360" height="10" />
   <rect class="bar-2" x="170" y="84" width="0" height="10" />

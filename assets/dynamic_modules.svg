@@ -86,12 +86,12 @@
     }
     @keyframes load-4 {
       0% { width: 0; }
-      100% { width: 27px; }
+      100% { width: 26px; }
     }
     @keyframes fluctuate-4 {
-      0%, 100% { width: 27px; }
-      33% { width: 23px; }
-      66% { width: 30px; }
+      0%, 100% { width: 26px; }
+      33% { width: 22px; }
+      66% { width: 29px; }
     }
 
     .lang-5 { fill: #50fa7b; }

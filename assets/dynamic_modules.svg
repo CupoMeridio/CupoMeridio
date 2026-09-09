@@ -150,7 +150,7 @@
   <rect class="bar-bg" x="170" y="119" width="360" height="10" />
   <rect class="bar-3" x="170" y="119" width="0" height="10" />
   <text class="text" x="535" y="129">]</text>
-  <text class="text pct lang-3" x="560" y="129">11%</text>
+  <text class="text pct lang-3" x="560" y="129">10%</text>
 
   <text class="text lang-4" x="20" y="164">Python</text>
   <text class="text" x="160" y="164">[</text>

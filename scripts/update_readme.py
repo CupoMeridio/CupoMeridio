@@ -53,12 +53,25 @@ def get_last_push():
     for event in events:
         if event.get("type") == "PushEvent":
             repo = event["repo"]["name"]
-            commits = event["payload"].get("commits", [])
-            if commits:
-                message = commits[-1]["message"].splitlines()[0]
-            else:
-                message = "(no commit message)"
-            return repo, message[:60]
+            commits = event.get("payload", {}).get("commits") or []
+            if commits and isinstance(commits, list) and len(commits) > 0 and "message" in commits[-1]:
+                raw_message = commits[-1]["message"].splitlines()[0]
+                message = (raw_message[:52] + "...") if len(raw_message) > 55 else raw_message
+                return repo, message
+
+            head = event.get("payload", {}).get("head")
+            if head and head != "0000000000000000000000000000000000000000":
+                try:
+                    commit_data = fetch_json(f"https://api.github.com/repos/{repo}/commits/{head}")
+                    raw_msg = commit_data.get("commit", {}).get("message", "")
+                    if raw_msg:
+                        raw_message = raw_msg.splitlines()[0]
+                        message = (raw_message[:52] + "...") if len(raw_message) > 55 else raw_message
+                        return repo, message
+                except Exception as e:
+                    print(f"[!] Impossibile recuperare commit {head} per {repo}: {e}", file=sys.stderr)
+
+            return repo, "(no commit message)"
     return "n/a", "no recent public activity"
 
 def generate_telemetry_svg():

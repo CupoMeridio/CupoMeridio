@@ -32,8 +32,8 @@
   </rect>
   
   <text class="text" x="20" y="30">[SYSTEM] <tspan class="live">LIVE</tspan> telemetry</text>
-  <text class="text" x="20" y="65">  uptime        :: <tspan class="accent pulse">3276 days</tspan></text>
+  <text class="text" x="20" y="65">  uptime        :: <tspan class="accent pulse">3277 days</tspan></text>
   <text class="text" x="20" y="85">  last_push     :: <tspan class="accent pulse">CupoMeridio/spotx-termux</tspan></text>
   <text class="text" x="20" y="105">  last_message  :: <tspan class="accent pulse">Revert(core): remove broken --type media and fix con...</tspan></text>
-  <text class="text" x="20" y="125">  synced_at     :: <tspan class="accent pulse">2026-09-21 11:27 UTC</tspan></text>
+  <text class="text" x="20" y="125">  synced_at     :: <tspan class="accent pulse">2026-09-22 10:35 UTC</tspan></text>
 </svg>

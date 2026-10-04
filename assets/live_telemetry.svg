@@ -32,8 +32,8 @@
   </rect>
   
   <text class="text" x="20" y="30">[SYSTEM] <tspan class="live">LIVE</tspan> telemetry</text>
-  <text class="text" x="20" y="65">  uptime        :: <tspan class="accent pulse">3288 days</tspan></text>
-  <text class="text" x="20" y="85">  last_push     :: <tspan class="accent pulse">CupoMeridio/spotx-termux</tspan></text>
-  <text class="text" x="20" y="105">  last_message  :: <tspan class="accent pulse">README updated</tspan></text>
-  <text class="text" x="20" y="125">  synced_at     :: <tspan class="accent pulse">2026-10-03 10:49 UTC</tspan></text>
+  <text class="text" x="20" y="65">  uptime        :: <tspan class="accent pulse">3289 days</tspan></text>
+  <text class="text" x="20" y="85">  last_push     :: <tspan class="accent pulse">CupoMeridio/Java_Music_Playlist_Manager</tspan></text>
+  <text class="text" x="20" y="105">  last_message  :: <tspan class="accent pulse">build(release): reuse app image for Windows MSI</tspan></text>
+  <text class="text" x="20" y="125">  synced_at     :: <tspan class="accent pulse">2026-10-04 11:31 UTC</tspan></text>
 </svg>

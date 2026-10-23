@@ -22,12 +22,12 @@
     }
     @keyframes load-0 {
       0% { width: 0; }
-      100% { width: 128px; }
+      100% { width: 127px; }
     }
     @keyframes fluctuate-0 {
-      0%, 100% { width: 128px; }
-      33% { width: 124px; }
-      66% { width: 131px; }
+      0%, 100% { width: 127px; }
+      33% { width: 123px; }
+      66% { width: 130px; }
     }
 
     .lang-1 { fill: #ffb86c; }
@@ -38,12 +38,12 @@
     }
     @keyframes load-1 {
       0% { width: 0; }
-      100% { width: 57px; }
+      100% { width: 56px; }
     }
     @keyframes fluctuate-1 {
-      0%, 100% { width: 57px; }
-      33% { width: 53px; }
-      66% { width: 60px; }
+      0%, 100% { width: 56px; }
+      33% { width: 52px; }
+      66% { width: 59px; }
     }
 
     .lang-2 { fill: #d946ef; }
@@ -54,12 +54,12 @@
     }
     @keyframes load-2 {
       0% { width: 0; }
-      100% { width: 56px; }
+      100% { width: 55px; }
     }
     @keyframes fluctuate-2 {
-      0%, 100% { width: 56px; }
-      33% { width: 52px; }
-      66% { width: 59px; }
+      0%, 100% { width: 55px; }
+      33% { width: 51px; }
+      66% { width: 58px; }
     }
 
     .lang-3 { fill: #f1fa8c; }
@@ -70,12 +70,12 @@
     }
     @keyframes load-3 {
       0% { width: 0; }
-      100% { width: 37px; }
+      100% { width: 41px; }
     }
     @keyframes fluctuate-3 {
-      0%, 100% { width: 37px; }
-      33% { width: 33px; }
-      66% { width: 40px; }
+      0%, 100% { width: 41px; }
+      33% { width: 37px; }
+      66% { width: 44px; }
     }
 
     .lang-4 { fill: #8be9fd; }
@@ -129,7 +129,7 @@
   <rect class="bar-bg" x="170" y="14" width="360" height="10" />
   <rect class="bar-0" x="170" y="14" width="0" height="10" />
   <text class="text" x="535" y="24">]</text>
-  <text class="text pct lang-0" x="560" y="24">36%</text>
+  <text class="text pct lang-0" x="560" y="24">35%</text>
 
   <text class="text lang-1" x="20" y="59">Java</text>
   <text class="text" x="160" y="59">[</text>
@@ -143,14 +143,14 @@
   <rect class="bar-bg" x="170" y="84" width="360" height="10" />
   <rect class="bar-2" x="170" y="84" width="0" height="10" />
   <text class="text" x="535" y="94">]</text>
-  <text class="text pct lang-2" x="560" y="94">16%</text>
+  <text class="text pct lang-2" x="560" y="94">15%</text>
 
   <text class="text lang-3" x="20" y="129">JavaScript</text>
   <text class="text" x="160" y="129">[</text>
   <rect class="bar-bg" x="170" y="119" width="360" height="10" />
   <rect class="bar-3" x="170" y="119" width="0" height="10" />
   <text class="text" x="535" y="129">]</text>
-  <text class="text pct lang-3" x="560" y="129">10%</text>
+  <text class="text pct lang-3" x="560" y="129">11%</text>
 
   <text class="text lang-4" x="20" y="164">Python</text>
   <text class="text" x="160" y="164">[</text>

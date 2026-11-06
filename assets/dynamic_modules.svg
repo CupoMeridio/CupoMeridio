@@ -38,12 +38,12 @@
     }
     @keyframes load-1 {
       0% { width: 0; }
-      100% { width: 70px; }
+      100% { width: 69px; }
     }
     @keyframes fluctuate-1 {
-      0%, 100% { width: 70px; }
-      33% { width: 66px; }
-      66% { width: 73px; }
+      0%, 100% { width: 69px; }
+      33% { width: 65px; }
+      66% { width: 72px; }
     }
 
     .lang-2 { fill: #ff5555; }
@@ -54,12 +54,12 @@
     }
     @keyframes load-2 {
       0% { width: 0; }
-      100% { width: 65px; }
+      100% { width: 64px; }
     }
     @keyframes fluctuate-2 {
-      0%, 100% { width: 65px; }
-      33% { width: 61px; }
-      66% { width: 68px; }
+      0%, 100% { width: 64px; }
+      33% { width: 60px; }
+      66% { width: 67px; }
     }
 
     .lang-3 { fill: #f1fa8c; }
@@ -86,12 +86,12 @@
     }
     @keyframes load-4 {
       0% { width: 0; }
-      100% { width: 36px; }
+      100% { width: 37px; }
     }
     @keyframes fluctuate-4 {
-      0%, 100% { width: 36px; }
-      33% { width: 32px; }
-      66% { width: 39px; }
+      0%, 100% { width: 37px; }
+      33% { width: 33px; }
+      66% { width: 40px; }
     }
 
     .lang-5 { fill: #50fa7b; }

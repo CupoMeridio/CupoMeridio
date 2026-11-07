@@ -14,25 +14,25 @@
       rx: 2px;
     }
 
-    .lang-0 { fill: #d946ef; }
+    .lang-0 { fill: #ffb86c; }
     .bar-0 {
-      fill: #d946ef;
+      fill: #ffb86c;
       rx: 2px;
       animation: load-0 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards, fluctuate-0 3.5s ease-in-out 1.5s infinite;
     }
     @keyframes load-0 {
       0% { width: 0; }
-      100% { width: 70px; }
+      100% { width: 71px; }
     }
     @keyframes fluctuate-0 {
-      0%, 100% { width: 70px; }
-      33% { width: 66px; }
-      66% { width: 73px; }
+      0%, 100% { width: 71px; }
+      33% { width: 67px; }
+      66% { width: 74px; }
     }
 
-    .lang-1 { fill: #ffb86c; }
+    .lang-1 { fill: #d946ef; }
     .bar-1 {
-      fill: #ffb86c;
+      fill: #d946ef;
       rx: 2px;
       animation: load-1 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards, fluctuate-1 4.2s ease-in-out 1.5s infinite;
     }
@@ -124,14 +124,14 @@
     <animateTransform attributeName="transform" type="translate" values="0,0; -40,0" dur="3s" repeatCount="indefinite" />
   </rect>
 
-  <text class="text lang-0" x="20" y="24">Jupyter Notebook</text>
+  <text class="text lang-0" x="20" y="24">Java</text>
   <text class="text" x="160" y="24">[</text>
   <rect class="bar-bg" x="170" y="14" width="360" height="10" />
   <rect class="bar-0" x="170" y="14" width="0" height="10" />
   <text class="text" x="535" y="24">]</text>
-  <text class="text pct lang-0" x="560" y="24">19%</text>
+  <text class="text pct lang-0" x="560" y="24">20%</text>
 
-  <text class="text lang-1" x="20" y="59">Java</text>
+  <text class="text lang-1" x="20" y="59">Jupyter Notebook</text>
   <text class="text" x="160" y="59">[</text>
   <rect class="bar-bg" x="170" y="49" width="360" height="10" />
   <rect class="bar-1" x="170" y="49" width="0" height="10" />

@@ -32,8 +32,8 @@
   </rect>
   
   <text class="text" x="20" y="30">[SYSTEM] <tspan class="live">LIVE</tspan> telemetry</text>
-  <text class="text" x="20" y="65">  uptime        :: <tspan class="accent pulse">3325 days</tspan></text>
-  <text class="text" x="20" y="85">  last_push     :: <tspan class="accent pulse">CupoMeridio/Java_Music_Playlist_Manager</tspan></text>
-  <text class="text" x="20" y="105">  last_message  :: <tspan class="accent pulse">style: fix code style, add static analysis tooling</tspan></text>
-  <text class="text" x="20" y="125">  synced_at     :: <tspan class="accent pulse">2026-11-09 14:42 UTC</tspan></text>
+  <text class="text" x="20" y="65">  uptime        :: <tspan class="accent pulse">3326 days</tspan></text>
+  <text class="text" x="20" y="85">  last_push     :: <tspan class="accent pulse">CupoMeridio/Launchpad-Online</tspan></text>
+  <text class="text" x="20" y="105">  last_message  :: <tspan class="accent pulse">feat(multisampling): add pad multisampling and in-ap...</tspan></text>
+  <text class="text" x="20" y="125">  synced_at     :: <tspan class="accent pulse">2026-11-10 13:57 UTC</tspan></text>
 </svg>

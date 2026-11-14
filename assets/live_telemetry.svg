@@ -32,8 +32,8 @@
   </rect>
   
   <text class="text" x="20" y="30">[SYSTEM] <tspan class="live">LIVE</tspan> telemetry</text>
-  <text class="text" x="20" y="65">  uptime        :: <tspan class="accent pulse">3329 days</tspan></text>
+  <text class="text" x="20" y="65">  uptime        :: <tspan class="accent pulse">3330 days</tspan></text>
   <text class="text" x="20" y="85">  last_push     :: <tspan class="accent pulse">CupoMeridio/Wordageddon-G17</tspan></text>
   <text class="text" x="20" y="105">  last_message  :: <tspan class="accent pulse">feat(ui): add dark/light theme support and clean up ...</tspan></text>
-  <text class="text" x="20" y="125">  synced_at     :: <tspan class="accent pulse">2026-11-13 13:38 UTC</tspan></text>
+  <text class="text" x="20" y="125">  synced_at     :: <tspan class="accent pulse">2026-11-14 12:43 UTC</tspan></text>
 </svg>

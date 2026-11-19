@@ -22,12 +22,12 @@
     }
     @keyframes load-0 {
       0% { width: 0; }
-      100% { width: 71px; }
+      100% { width: 69px; }
     }
     @keyframes fluctuate-0 {
-      0%, 100% { width: 71px; }
-      33% { width: 67px; }
-      66% { width: 74px; }
+      0%, 100% { width: 69px; }
+      33% { width: 65px; }
+      66% { width: 72px; }
     }
 
     .lang-1 { fill: #ffb86c; }
@@ -38,12 +38,12 @@
     }
     @keyframes load-1 {
       0% { width: 0; }
-      100% { width: 66px; }
+      100% { width: 64px; }
     }
     @keyframes fluctuate-1 {
-      0%, 100% { width: 66px; }
-      33% { width: 62px; }
-      66% { width: 69px; }
+      0%, 100% { width: 64px; }
+      33% { width: 60px; }
+      66% { width: 67px; }
     }
 
     .lang-2 { fill: #d946ef; }
@@ -54,12 +54,12 @@
     }
     @keyframes load-2 {
       0% { width: 0; }
-      100% { width: 64px; }
+      100% { width: 62px; }
     }
     @keyframes fluctuate-2 {
-      0%, 100% { width: 64px; }
-      33% { width: 60px; }
-      66% { width: 67px; }
+      0%, 100% { width: 62px; }
+      33% { width: 58px; }
+      66% { width: 65px; }
     }
 
     .lang-3 { fill: #ff5555; }
@@ -70,12 +70,12 @@
     }
     @keyframes load-3 {
       0% { width: 0; }
-      100% { width: 60px; }
+      100% { width: 58px; }
     }
     @keyframes fluctuate-3 {
-      0%, 100% { width: 60px; }
-      33% { width: 56px; }
-      66% { width: 63px; }
+      0%, 100% { width: 58px; }
+      33% { width: 54px; }
+      66% { width: 61px; }
     }
 
     .lang-4 { fill: #8be9fd; }
@@ -86,12 +86,12 @@
     }
     @keyframes load-4 {
       0% { width: 0; }
-      100% { width: 33px; }
+      100% { width: 40px; }
     }
     @keyframes fluctuate-4 {
-      0%, 100% { width: 33px; }
-      33% { width: 29px; }
-      66% { width: 36px; }
+      0%, 100% { width: 40px; }
+      33% { width: 36px; }
+      66% { width: 43px; }
     }
 
     .lang-5 { fill: #50fa7b; }
@@ -102,12 +102,12 @@
     }
     @keyframes load-5 {
       0% { width: 0; }
-      100% { width: 21px; }
+      100% { width: 20px; }
     }
     @keyframes fluctuate-5 {
-      0%, 100% { width: 21px; }
-      33% { width: 17px; }
-      66% { width: 24px; }
+      0%, 100% { width: 20px; }
+      33% { width: 16px; }
+      66% { width: 23px; }
     }
   </style>
 
@@ -129,7 +129,7 @@
   <rect class="bar-bg" x="170" y="14" width="360" height="10" />
   <rect class="bar-0" x="170" y="14" width="0" height="10" />
   <text class="text" x="535" y="24">]</text>
-  <text class="text pct lang-0" x="560" y="24">20%</text>
+  <text class="text pct lang-0" x="560" y="24">19%</text>
 
   <text class="text lang-1" x="20" y="59">Java</text>
   <text class="text" x="160" y="59">[</text>
@@ -143,21 +143,21 @@
   <rect class="bar-bg" x="170" y="84" width="360" height="10" />
   <rect class="bar-2" x="170" y="84" width="0" height="10" />
   <text class="text" x="535" y="94">]</text>
-  <text class="text pct lang-2" x="560" y="94">18%</text>
+  <text class="text pct lang-2" x="560" y="94">17%</text>
 
   <text class="text lang-3" x="20" y="129">HTML</text>
   <text class="text" x="160" y="129">[</text>
   <rect class="bar-bg" x="170" y="119" width="360" height="10" />
   <rect class="bar-3" x="170" y="119" width="0" height="10" />
   <text class="text" x="535" y="129">]</text>
-  <text class="text pct lang-3" x="560" y="129">17%</text>
+  <text class="text pct lang-3" x="560" y="129">16%</text>
 
   <text class="text lang-4" x="20" y="164">Python</text>
   <text class="text" x="160" y="164">[</text>
   <rect class="bar-bg" x="170" y="154" width="360" height="10" />
   <rect class="bar-4" x="170" y="154" width="0" height="10" />
   <text class="text" x="535" y="164">]</text>
-  <text class="text pct lang-4" x="560" y="164">9%</text>
+  <text class="text pct lang-4" x="560" y="164">11%</text>
 
   <text class="text lang-5" x="20" y="199">CSS</text>
   <text class="text" x="160" y="199">[</text>

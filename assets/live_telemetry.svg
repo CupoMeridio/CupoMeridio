@@ -32,8 +32,8 @@
   </rect>
   
   <text class="text" x="20" y="30">[SYSTEM] <tspan class="live">LIVE</tspan> telemetry</text>
-  <text class="text" x="20" y="65">  uptime        :: <tspan class="accent pulse">3336 days</tspan></text>
-  <text class="text" x="20" y="85">  last_push     :: <tspan class="accent pulse">CupoMeridio/Launchpad-Online</tspan></text>
-  <text class="text" x="20" y="105">  last_message  :: <tspan class="accent pulse">Merge pull request #9 from CupoMeridio/develop</tspan></text>
-  <text class="text" x="20" y="125">  synced_at     :: <tspan class="accent pulse">2026-11-20 14:36 UTC</tspan></text>
+  <text class="text" x="20" y="65">  uptime        :: <tspan class="accent pulse">3337 days</tspan></text>
+  <text class="text" x="20" y="85">  last_push     :: <tspan class="accent pulse">CupoMeridio/spotx-termux</tspan></text>
+  <text class="text" x="20" y="105">  last_message  :: <tspan class="accent pulse">refactor: drop release-tag pinning, fetch all instal...</tspan></text>
+  <text class="text" x="20" y="125">  synced_at     :: <tspan class="accent pulse">2026-11-21 13:54 UTC</tspan></text>
 </svg>

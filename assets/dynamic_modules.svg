@@ -86,12 +86,12 @@
     }
     @keyframes load-4 {
       0% { width: 0; }
-      100% { width: 41px; }
+      100% { width: 43px; }
     }
     @keyframes fluctuate-4 {
-      0%, 100% { width: 41px; }
-      33% { width: 37px; }
-      66% { width: 44px; }
+      0%, 100% { width: 43px; }
+      33% { width: 39px; }
+      66% { width: 46px; }
     }
 
     .lang-5 { fill: #50fa7b; }
@@ -157,7 +157,7 @@
   <rect class="bar-bg" x="170" y="154" width="360" height="10" />
   <rect class="bar-4" x="170" y="154" width="0" height="10" />
   <text class="text" x="535" y="164">]</text>
-  <text class="text pct lang-4" x="560" y="164">11%</text>
+  <text class="text pct lang-4" x="560" y="164">12%</text>
 
   <text class="text lang-5" x="20" y="199">CSS</text>
   <text class="text" x="160" y="199">[</text>
